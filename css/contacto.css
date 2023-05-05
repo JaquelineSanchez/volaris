@@ -1,0 +1,50 @@
+/*Estructura general*/
+
+body {
+  background-color: #6DEEEC;
+  background-image: url("https://www.urnvirtual.com/img/carousel/URN_home-03.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#000;
+}
+
+.navbar {
+  background: #03A9F4;
+}
+
+.navbar li:hover a {
+  border-radius: 3px;
+  background: #2980B9;
+  color: #fff !important;
+}
+
+.btn-moneda {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+
+.header_logo {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #000;
+}
+
+/*Estructura especial*/
+
+.funcionBot{  
+  background-color: #ffffff27;  
+}
+
+.form-solicitud{
+  background-color: #ffffff2a;
+}
