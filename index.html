@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="author" content="Andrea Sánchez" />
   <title>Volaris</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="css/estilos.css" rel="stylesheet" />
+  <link href="css/general.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -81,8 +83,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/e2/0c/79.jpg" class="d-block w-100 img-fluid"
-              alt="A Guadalajara">
+            <img src="https://media.tacdn.com/media/attractions-content--1x-1/0b/e2/0c/79.jpg"
+              class="d-block w-100 img-fluid" alt="A Guadalajara">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -107,25 +109,28 @@
       <h1 class="font-weight-light">Buscar vuelo</h1>
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="via-redo-tab" data-bs-toggle="tab" data-bs-target="#via-redo" type="button" role="tab" aria-controls="via-redo" aria-selected="true">Viaje redondo</button>
-          <button class="nav-link" id="via-sen-tab" data-bs-toggle="tab" data-bs-target="#via-sen" type="button" role="tab" aria-controls="via-sen" aria-selected="false">Viaje sencillo</button>
+          <button class="nav-link active" id="via-redo-tab" data-bs-toggle="tab" data-bs-target="#via-redo"
+            type="button" role="tab" aria-controls="via-redo" aria-selected="true">Viaje redondo</button>
+          <button class="nav-link" id="via-sen-tab" data-bs-toggle="tab" data-bs-target="#via-sen" type="button"
+            role="tab" aria-controls="via-sen" aria-selected="false">Viaje sencillo</button>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="via-redo" role="tabpanel" aria-labelledby="via-redo-tab" tabindex="0">
+        <div class="tab-pane fade show active" id="via-redo" role="tabpanel" aria-labelledby="via-redo-tab"
+          tabindex="0">
           <form class="row g-3">
-            <div class="col-md-6">      
-              <label for="origen-select" class="form-label"> <b>Origen</b></label>        
+            <div class="col-md-6">
+              <label for="origen-select" class="form-label"> <b>Origen</b></label>
               <select class="form-select form-select-md">
                 <option selected>Selecciona el lugar de origen</option>
-                <option value="1">...</option>                
+                <option value="1">...</option>
               </select>
             </div>
-            <div class="col-md-6">      
-              <label for="destino-select" class="form-label"><b>Destino</b></label>        
+            <div class="col-md-6">
+              <label for="destino-select" class="form-label"><b>Destino</b></label>
               <select class="form-select form-select-md">
                 <option selected>Selecciona el lugar de destino</option>
-                <option value="1">...</option>                
+                <option value="1">...</option>
               </select>
             </div>
             <div class="col-md-6">
@@ -171,8 +176,11 @@
             </div>
             <div class="col-md-12">
               <div class="btn-group buscar-vuelo-btn">
-                <a href="#" class="btn btn-primary"><img src="https://cdn-icons-png.flaticon.com/512/68/68380.png" height="20px"> Buscar vuelo</a>
-                <a href="https://www.yavas.com/?utm_source=volaris_icon_yavas1&utm_medium=referral&utm_campaign=es&adfcd=1679363443.OajPAUfx30SquAvynPn0Vw.MjYzMjYxNSwxODY5NzQz" class="btn btn-primary"> <img src="https://cdn-icons-png.flaticon.com/512/1475/1475996.png" height="20px"> Buscar vuelo + hotel</a>                
+                <a href="#" class="btn btn-primary"><img src="https://cdn-icons-png.flaticon.com/512/68/68380.png"
+                    height="20px"> Buscar vuelo</a>
+                <a href="https://www.yavas.com/?utm_source=volaris_icon_yavas1&utm_medium=referral&utm_campaign=es&adfcd=1679363443.OajPAUfx30SquAvynPn0Vw.MjYzMjYxNSwxODY5NzQz"
+                  class="btn btn-primary"> <img src="https://cdn-icons-png.flaticon.com/512/1475/1475996.png"
+                    height="20px"> Buscar vuelo + hotel</a>
               </div>
             </div>
           </form>
@@ -180,18 +188,18 @@
         <!-- Viaje de ida -->
         <div class="tab-pane fade" id="via-sen" role="tabpanel" aria-labelledby="via-sen-tab" tabindex="0">
           <form class="row g-3">
-            <div class="col-md-6">      
-              <label for="origen-select" class="form-label"> <b>Origen</b></label>        
+            <div class="col-md-6">
+              <label for="origen-select" class="form-label"> <b>Origen</b></label>
               <select class="form-select form-select-md">
                 <option selected>Selecciona el lugar de origen</option>
-                <option value="1">...</option>                
+                <option value="1">...</option>
               </select>
             </div>
-            <div class="col-md-6">      
-              <label for="destino-select" class="form-label"><b>Destino</b></label>        
+            <div class="col-md-6">
+              <label for="destino-select" class="form-label"><b>Destino</b></label>
               <select class="form-select form-select-md">
                 <option selected>Selecciona el lugar de destino</option>
-                <option value="1">...</option>                
+                <option value="1">...</option>
               </select>
             </div>
             <div class="col-md-6">
@@ -230,13 +238,16 @@
             </div>
             <div class="col-md-12">
               <div class="btn-group buscar-vuelo-btn">
-                <a href="#" class="btn btn-primary"><img src="https://cdn-icons-png.flaticon.com/512/68/68380.png" height="20px"> Buscar vuelo</a>
-                <a href="https://www.yavas.com/?utm_source=volaris_icon_yavas1&utm_medium=referral&utm_campaign=es&adfcd=1679363443.OajPAUfx30SquAvynPn0Vw.MjYzMjYxNSwxODY5NzQz" class="btn btn-primary"> <img src="https://cdn-icons-png.flaticon.com/512/1475/1475996.png" height="20px"> Buscar vuelo + hotel</a>                
+                <a href="#" class="btn btn-primary"><img src="https://cdn-icons-png.flaticon.com/512/68/68380.png"
+                    height="20px"> Buscar vuelo</a>
+                <a href="https://www.yavas.com/?utm_source=volaris_icon_yavas1&utm_medium=referral&utm_campaign=es&adfcd=1679363443.OajPAUfx30SquAvynPn0Vw.MjYzMjYxNSwxODY5NzQz"
+                  class="btn btn-primary"> <img src="https://cdn-icons-png.flaticon.com/512/1475/1475996.png"
+                    height="20px"> Buscar vuelo + hotel</a>
               </div>
             </div>
           </form>
         </div>
-        </div>
+      </div>
     </div>
 
     <!-- Membresias -->
@@ -245,10 +256,15 @@
       <div class="row row-cols-1 row-cols-md-2 g-4 membresias-cont">
         <div class="col">
           <div class="card border-primary">
-            <img src="https://st.depositphotos.com/4218696/60677/i/450/depositphotos_606772920-stock-photo-traveling-cheerful-black-tourist-woman.jpg" class="card-img-top" height="275px" alt="v.club">
+            <img
+              src="https://st.depositphotos.com/4218696/60677/i/450/depositphotos_606772920-stock-photo-traveling-cheerful-black-tourist-woman.jpg"
+              class="card-img-top" height="275px" alt="v.club">
             <div class="card-body">
-              <h3 class="card-title"><center><b>v.club</b></center></h3>
-              <p class="card-text">Descuentos en nuestras tarifas para cada vuelo. Viaja al precio más bajo en Volaris.</p>
+              <h3 class="card-title">
+                <center><b>v.club</b></center>
+              </h3>
+              <p class="card-text">Descuentos en nuestras tarifas para cada vuelo. Viaja al precio más bajo en Volaris.
+              </p>
             </div>
             <div class="card footer">
               <button class="btn btn-primary" type="button"> Obtener ahora</button>
@@ -257,10 +273,14 @@
         </div>
         <div class="col">
           <div class="card border-primary">
-            <img src="https://www.puntosglobales.com/wp-content/uploads/2022/02/invex-volaris2022.jpg" class="card-img-top" alt="invex">
+            <img src="https://www.puntosglobales.com/wp-content/uploads/2022/02/invex-volaris2022.jpg"
+              class="card-img-top" alt="invex">
             <div class="card-body">
-              <h3 class="card-title"><center><b>INVEX</b></center></h3>
-              <p class="card-text">Acumula pesos para comprar tus vuelos. ¡no millas ni puntos! Además, obtén equipaje gratis y meses sin intereses.</p>
+              <h3 class="card-title">
+                <center><b>INVEX</b></center>
+              </h3>
+              <p class="card-text">Acumula pesos para comprar tus vuelos. ¡no millas ni puntos! Además, obtén equipaje
+                gratis y meses sin intereses.</p>
             </div>
             <div class="card footer">
               <button class="btn btn-primary" type="button"> Obtener ahora</button>
@@ -269,21 +289,28 @@
         </div>
         <div class="col">
           <div class="card border-primary">
-            <img src="https://traveltimes.com.mx/wp-content/uploads/2021/07/ABRE-2.jpg" class="card-img-top" alt="v.business">
+            <img src="https://traveltimes.com.mx/wp-content/uploads/2021/07/ABRE-2.jpg" class="card-img-top"
+              alt="v.business">
             <div class="card-body">
-              <h3 class="card-title"><center><b>v.business</b></center></h3>
+              <h3 class="card-title">
+                <center><b>v.business</b></center>
+              </h3>
               <p class="card-text">La membresía con beneficios especiales para tus viajes de negocio.</p>
             </div>
             <div class="card footer">
               <button class="btn btn-primary" type="button"> Obtener ahora</button>
             </div>
           </div>
-        </div>        
+        </div>
         <div class="col">
           <div class="card border-primary">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91WdtkfVRWIsCQpCjBzvpE0RLhvezjSRtvw&usqp=CAU" class="card-img-top" alt="v.pass">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR91WdtkfVRWIsCQpCjBzvpE0RLhvezjSRtvw&usqp=CAU"
+              class="card-img-top" alt="v.pass">
             <div class="card-body">
-              <h3 class="card-title"><center><b>v.pass</b></center></h3>
+              <h3 class="card-title">
+                <center><b>v.pass</b></center>
+              </h3>
               <p class="card-text">Un viaje te espera cada mes con V.pass, tu suscripción a vuelos.</p>
             </div>
             <div class="card footer">
@@ -296,10 +323,39 @@
   </div>
 
   <!-- Footer-->
-  <footer class="py-5">
-    <div class="container px-4 px-lg-5">
-      <p class="m-0 text-center text-white">2023 &copy; Volaris y su logotipo son marcas registradas de Volaris</p>
-    </div>
+  <footer class="justify-content-between py-3 border-top">
+    <!-- app -->
+    <div class="container text-center">
+      <div class="row justify-content-md-center row-cols-2">
+        <div class="col-6">
+          <p class="text-white fs-5"><strong>Descarga la app de volaris</strong></p>
+          <ul class="nav justify-content-center list-unstyled">
+            <li class="ms-3"><a class="google" href="http://bit.ly/1wvn7WN" target="_blank"><img src="img/googlePlay.svg"
+                  height="50px" alt="google Play"></a></li>
+            <li class="ms-3"><a class="store" href="https://itunes.apple.com/us/app/volaris/id945390888?ls=1&amp;mt=8"
+                target="_blank"><img src="img/appStore.svg" height="50px" alt="Itunes"></a></li>
+          </ul>
+        </div>
+        <!-- Redes -->
+        <div class="col-6">          
+          <p class="text-white fs-5"><strong>Siguenos en redes sociales</strong></p>
+          <ul class="nav justify-content-center list-unstyled d-flex rounded-social-buttons">
+            <li class="ms-3"><a class="social-button facebook" href="https://www.facebook.com/viajavolaris"
+                target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li class="ms-3"><a class="social-button twitter" href="https://twitter.com/viajaVolaris/" target="_blank"><i
+                  class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="social-button linkedin"
+                href="https://www.linkedin.com/authwall?trk=ripf&amp;trkInfo=AQHPxoMxdaLCRQAAAW6Ne2LAKePLAk9ymi5vP9zBL9Etvf3pwrYCwj89Zef33uCBAvXM0dln_hpBOtmcArvq6-oYgmtETeoHAgwHc0vhI0jrhsfemJJxO0C7WqC2VaU_KYpirLg=&amp;originalReferer=https://www.volaris.com/?culture=es-MX&amp;currency=USD&amp;sessionRedirect=https:%2F%2Fwww.linkedin.com%2Fcompany%2Fvolaris"
+                target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            <li class="ms-3"><a class="social-button whatsApp"
+                href="https://wa.me/5215558988599?text=Hola,%20%C2%BFme%20pueden%20ayudar?%20" target="_blank"><i
+                  class="bi bi-whatsapp"></i></a></li>
+            <li class="ms-3"><a class="social-button instagram" href="https://www.instagram.com/viajavolaris/"
+                target="_blank"><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
   </footer>
 </body>
 
