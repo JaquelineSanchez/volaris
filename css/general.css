@@ -8,6 +8,9 @@ body {
   color:#000;
 }
 
+.nav-item.active{
+  color: #000;
+}
 .navbar {
   background: #03A9F4;
 }

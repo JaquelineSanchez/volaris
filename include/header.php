@@ -18,7 +18,9 @@
       </span>
     </div>
   </div>
-  
+
+  <?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>  
+
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,11 +28,11 @@
           class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php"><b>Vuelos</b></a></li>
-          <li class="nav-item"><a class="nav-link" href="reserva.php">Mi reserva</a></li>
-          <li class="nav-item"><a class="nav-link" href="estatus.php">Estatus de vuelo</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.php">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="volaris.php">Sobre volaris</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage == 'index') ? 'active':''; ?>" aria-current="page" href="index.php">Vuelos</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage == 'reserva') ? 'active':''; ?>" href="reserva.php">Mi reserva</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage == 'estatus') ? 'active':''; ?>" href="estatus.php">Estatus de vuelo</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage == 'contacto') ? 'active':''; ?>" href="contacto.php">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link <?= ($activePage == 'volaris') ? 'active':''; ?>" href="volaris.php">Sobre volaris</a></li>
         </ul>
       </div>
     </div>
