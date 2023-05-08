@@ -1,12 +1,14 @@
 /*promociones*/
-.carousel-caption{
-    /* From https://css.glass */
+.carousel-caption{    
 background: rgba(100, 98, 98, 0.31);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(0px);
 -webkit-backdrop-filter: blur(0px);
 }
+
+/*Formulario*/
+
 
 .escala-check {
     display: flex;
@@ -21,6 +23,7 @@ backdrop-filter: blur(0px);
 #via-redo-tab {
     color: #000;
 }
+
 
 /*membresias*/
 #membresias-tipos .item {

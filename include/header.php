@@ -27,10 +27,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php"><b>Vuelos</b></a></li>
-          <li class="nav-item"><a class="nav-link" href="Reserva.html">Mi reserva</a></li>
-          <li class="nav-item"><a class="nav-link" href="estatus.html">Estatus de vuelo</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="volaris.html">Sobre volaris</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.php">Mi reserva</a></li>
+          <li class="nav-item"><a class="nav-link" href="estatus.php">Estatus de vuelo</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.php">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="volaris.php">Sobre volaris</a></li>
         </ul>
       </div>
     </div>

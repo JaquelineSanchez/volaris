@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link href="css/index.css" rel="stylesheet" />
-  <link href="css/general.css" rel="stylesheet" />
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link href="css/index.css" rel="stylesheet" />
+  <link href="css/general.css" rel="stylesheet" />
   </head>
 
 <body>
@@ -26,12 +26,12 @@
 
   <!-- Contenido de pagina-->
   <div class="container contenido px-4 px-lg-5">
-    <!-- carrusel Promos-->
+    <!-- carrusel Promociones-->
     <?php
     include("include/promos.php");
     ?>
     <!-- buscar vuelo -->
-    <div class="row py-4 gx-4 gx-lg-5">
+    <div class="row py-4 gx-4 gx-lg-5" id="formulario">
       <h1 class="font-weight-light">Buscar vuelo</h1>
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -44,7 +44,7 @@
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="via-redo" role="tabpanel" aria-labelledby="via-redo-tab"
           tabindex="0">
-          <form class="row g-3">
+          <form class="row g-3" id="formRedo">
             <div class="col-md-6">
               <label for="origen-select" class="form-label"> <b>Origen</b></label>
               <select class="form-select form-select-md">
@@ -92,6 +92,13 @@
                     <label for="fechaRegresp">Selecciona la fecha de regreso</label>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPasajeros" class="form-label"><b>Numero de pasajeros</b></label>
+              <select id="inputPasajeros" class="form-select">
+                <option selected>1 pasajero</option>
+                <option>2 pasajeros</option>
+              </select>
             </div>                        
             <div class="col-md-6">
               <label for="inputPromo" class="form-label"><b>Codigo de promoción</b></label>
