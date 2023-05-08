@@ -12,7 +12,13 @@ body {
   color: #000;
 }
 .navbar {
-  background: #03A9F4;
+/* From https://css.glass */
+background: rgba(250, 150, 239, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(250, 150, 239, 0.3);
 }
 
 .navbar li:hover a {
