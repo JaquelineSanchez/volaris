@@ -44,7 +44,7 @@ include("include/conexion.php");
           <form class="row g-3" id="formRedo" method="post">
             <?php
               include_once("include/rutasVuelos.php");
-              echo formVuelos(1);
+              echo formVuelos(1,"");
             ?>
             <div class="col-md-6">
               <div class="escala-check">
@@ -108,7 +108,7 @@ include("include/conexion.php");
           <form class="row g-3" id="formSen" method="post">
             <?php
               include_once("include/rutasVuelos.php");
-              echo formVuelos(2);
+              echo formVuelos(2,"");
             ?>
             <div class="col-md-6">
               <div class="escala-check">
